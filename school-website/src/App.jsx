@@ -5,11 +5,13 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white p-4 shadow-md">
+    <nav className="bg-blue-600 text-white py-5 px-6 shadow-md text-lg">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-3">
-          <img src="/logo.png" alt="School Logo" className="w-10 h-10 rounded-full" />
-          <Link to="/" className="text-xl font-bold hover:underline hover:text-yellow-300 transition">The Learning World School</Link>
+          <img src="/logo.png" alt="School Logo" className="w-12 h-12 rounded-full" />
+          <Link to="/" className="text-2xl font-bold hover:underline hover:text-yellow-300 transition">
+            The Learning World School
+          </Link>
         </div>
         <button
           className="sm:hidden text-white focus:outline-none"
@@ -109,7 +111,6 @@ function HomePage() {
             <img src="/campus1.jpg" alt="School Building" className="rounded shadow" />
             <img src="/classroom1.jpg" alt="Classroom" className="rounded shadow" />
           </div>
-          <p className="text-sm text-gray-500 mt-2">* Replace images with actual school photos in your <code>/public</code> folder</p>
         </div>
 
         {/* Google Map */}
