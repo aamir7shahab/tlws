@@ -61,7 +61,7 @@ export default function Home() {
         <ul className="space-y-3 text-gray-700">
           <li className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-blue-500"></span>
-            Admissions open for the 2025–26 academic session
+            Admissions open for the 2026–27 academic session
           </li>
 
           <li className="flex items-center gap-2">

@@ -1,0 +1,176 @@
+/* BASE */
+p,
+li {
+  color: #1f2937;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* SECTION HEADINGS */
+/* FORCE h2 WEIGHT WHERE USED */
+.section-container h2,
+.admissions-hero h2,
+.admissions-card h2,
+.documents-box h2,
+.eligibility-wrapper h2 {
+  font-weight: 600;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+  color: #1e3a8a;
+}
+
+/* PAGE */
+.admissions-page {
+  padding: 2rem 1.5rem;
+}
+
+/* CONTAINER */
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HERO */
+.admissions-hero {
+  background: linear-gradient(180deg, #ffffff, #eef5ff);
+  border-radius: 22px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.2rem;
+}
+
+.admissions-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e40af;
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+.hero-description {
+  margin-top: 1.2rem;
+}
+
+/* HIGHLIGHTS */
+.highlights-strip {
+  max-width: 1100px;
+  margin: 0 auto 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+}
+
+.highlight-card {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+/* CTA (INLINE) */
+.admissions-cta-mid {
+  max-width: 1100px;
+  margin: 1.6rem auto 2.5rem;
+  padding: 2.2rem 2.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border-radius: 20px;
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.25);
+}
+
+.admissions-cta-mid h2 {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.admissions-cta-mid p {
+  color: #e5edff;
+  max-width: 720px;
+  margin: 0.8rem auto 0;
+}
+
+.cta-note {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #dbeafe;
+}
+
+/* BUTTON */
+.apply-button-large {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: #ffffff;
+  color: #1e40af;
+  padding: 0.9rem 2.6rem;
+  font-weight: 800;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.soft-section {
+  background: #f4f8ff;
+  padding: 2.5rem 0;
+  margin: 2.5rem 0;
+}
+
+/* CARDS */
+.admissions-card,
+.documents-box,
+.eligibility-wrapper,
+.why-choose-card {
+  background: #ffffff;
+  padding: 2.4rem;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #2563eb;
+}
+
+/* WHY CHOOSE */
+.why-grid {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+h4 {
+  color: #1e40af;
+  font-weight: 400;
+}
+
+/* ELIGIBILITY */
+.eligibility-grid {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+}
+
+.eligibility-card {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #2563eb;
+}
+
+/* SIGNATURE */
+.signature {
+  margin-top: 1.2rem;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .admissions-cta-mid {
+    padding: 2rem 1.6rem;
+  }
+}
