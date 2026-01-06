@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -284,6 +285,10 @@ function EventsPage() {
     </div>
   );
 }
+=======
+import Navbar from './components/Navbar';
+import AppRoutes from './routes/AppRoutes';
+>>>>>>> Stashed changes
 
 function Footer() {
   return (
@@ -298,8 +303,9 @@ function Footer() {
 
 export default function App() {
   return (
-    <Router>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <Navbar />
+<<<<<<< Updated upstream
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -309,5 +315,9 @@ export default function App() {
       </Routes>
       <Footer />
     </Router>
+=======
+      <AppRoutes />
+    </div>
+>>>>>>> Stashed changes
   );
 }
