@@ -66,13 +66,7 @@ export default function Events() {
               <h4 className="mb-2" style={{ color: 'var(--primary-blue)' }}>
                 🏆 Inter-School Competition
               </h4>
-              <p
-                style={{
-                  color: 'var(--text-secondary)',
-                  fontSize: '0.875rem',
-                  marginBottom: '0.5rem',
-                }}
-              >
+              <p className="text-sm-secondary" style={{ marginBottom: '0.5rem' }}>
                 December 2024
               </p>
               <p>
@@ -85,13 +79,7 @@ export default function Events() {
               <h4 className="mb-2" style={{ color: 'var(--primary-blue)' }}>
                 🎨 Art Exhibition
               </h4>
-              <p
-                style={{
-                  color: 'var(--text-secondary)',
-                  fontSize: '0.875rem',
-                  marginBottom: '0.5rem',
-                }}
-              >
+              <p className="text-sm-secondary" style={{ marginBottom: '0.5rem' }}>
                 November 2024
               </p>
               <p>

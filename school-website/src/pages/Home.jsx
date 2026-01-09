@@ -54,7 +54,7 @@ export default function Home() {
                 Faculty Opening – Apply Now
               </a>
             </div>
-            <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+            <p className="text-sm-secondary">
               We are inviting applications from qualified and passionate educators.
             </p>
           </div>

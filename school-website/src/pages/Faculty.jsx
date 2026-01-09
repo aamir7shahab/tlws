@@ -69,7 +69,7 @@ export default function Faculty() {
             >
               Apply Now
             </a>
-            <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#dbeafe' }}>
+            <p className="text-light-blue" style={{ marginTop: '1rem', fontSize: '0.875rem' }}>
               Applications are reviewed on a rolling basis.
             </p>
           </div>

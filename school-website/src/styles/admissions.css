@@ -46,7 +46,7 @@ li {
 }
 
 .admissions-hero h1 {
-  font-size: 2.5rem;
+  font-size: var(--font-3xl);
   font-weight: 800;
   color: var(--primary-blue);
 }
@@ -95,7 +95,7 @@ li {
 }
 
 .admissions-cta-mid p {
-  color: #e5edff;
+  color: #ffffff;
   max-width: 720px;
   margin: 0.8rem auto 0;
 }
@@ -103,8 +103,8 @@ li {
 .cta-note {
   display: block;
   margin-top: 0.6rem;
-  font-size: 0.85rem;
-  color: #dbeafe;
+  font-size: var(--font-sm);
+  color: #ffffff;
 }
 
 /* BUTTON */
@@ -112,7 +112,7 @@ li {
   display: inline-block;
   margin-top: 1.2rem;
   background: #ffffff;
-  color: #1e40af;
+  color: var(--primary-blue-dark);
   padding: 0.9rem 2.6rem;
   font-weight: 800;
   border-radius: 14px;

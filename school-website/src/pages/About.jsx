@@ -257,7 +257,7 @@ export default function About() {
                 environment where every student can discover their potential, develop their talents,
                 and grow into confident, compassionate individuals."
               </p>
-              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+              <p className="text-sm-secondary" style={{ marginTop: '1rem' }}>
                 M.Ed., Ph.D. in Education | 20+ years of experience in educational leadership
               </p>
             </div>
@@ -286,12 +286,7 @@ export default function About() {
               >
                 [Founder Name 1]
               </h4>
-              <p
-                className="text-center mb-2"
-                style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-secondary)' }}
-              >
-                Founder & Chairman
-              </p>
+              <p className="text-role text-center mb-2">Founder & Chairman</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'center' }}>
                 Visionary leader with a passion for transforming education and empowering young
                 minds to achieve excellence.
@@ -311,12 +306,7 @@ export default function About() {
               >
                 [Founder Name 2]
               </h4>
-              <p
-                className="text-center mb-2"
-                style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-secondary)' }}
-              >
-                Co-Founder & Vice Chairman
-              </p>
+              <p className="text-role text-center mb-2">Co-Founder & Vice Chairman</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'center' }}>
                 Dedicated to creating inclusive learning environments and fostering holistic
                 development in every student.
@@ -336,12 +326,7 @@ export default function About() {
               >
                 [Founder Name 3]
               </h4>
-              <p
-                className="text-center mb-2"
-                style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-secondary)' }}
-              >
-                Co-Founder & Secretary
-              </p>
+              <p className="text-role text-center mb-2">Co-Founder & Secretary</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'center' }}>
                 Committed to academic excellence and ensuring the highest standards of education and
                 infrastructure.
@@ -371,12 +356,7 @@ export default function About() {
               >
                 [Founder Name 4]
               </h4>
-              <p
-                className="text-center mb-2"
-                style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-secondary)' }}
-              >
-                Co-Founder & Treasurer
-              </p>
+              <p className="text-role text-center mb-2">Co-Founder & Treasurer</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'center' }}>
                 Expert in educational administration and resource management, ensuring sustainable
                 growth and development.
@@ -396,12 +376,7 @@ export default function About() {
               >
                 [Founder Name 5]
               </h4>
-              <p
-                className="text-center mb-2"
-                style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-secondary)' }}
-              >
-                Co-Founder & Academic Director
-              </p>
+              <p className="text-role text-center mb-2">Co-Founder & Academic Director</p>
               <p style={{ fontSize: '0.95rem', textAlign: 'center' }}>
                 Passionate educator focused on curriculum innovation and implementing best practices
                 in teaching methodologies.

@@ -34,12 +34,12 @@
   justify-content: center;
   color: var(--primary-blue);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--font-xl);
 }
 
 .faculty-name {
   font-weight: 600;
-  font-size: 1.125rem;
+  font-size: var(--font-md);
   color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
@@ -52,7 +52,7 @@
 
 .faculty-qualification,
 .faculty-experience {
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   color: var(--text-secondary);
   margin-bottom: 0.25rem;
 }
