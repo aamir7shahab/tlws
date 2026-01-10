@@ -5,19 +5,16 @@ export default function Events() {
   const events = [
     {
       title: 'Science Fair',
-      date: 'March 10, 2025',
       desc: 'An exhibition of science projects by students of all grades.',
       icon: '🔬',
     },
     {
       title: 'Annual Day',
-      date: 'April 15, 2025',
       desc: 'A celebration of student achievements and performances.',
       icon: '🎭',
     },
     {
       title: 'Sports Meet',
-      date: 'May 5, 2025',
       desc: 'A day of athletics and sporting spirit.',
       icon: '⚽',
     },
@@ -53,38 +50,35 @@ export default function Events() {
         </div>
       </section>
 
-      {/* PAST EVENTS */}
+      {/* STUDENT LIFE PREVIEW */}
       <section className="section-soft">
         <div className="section-container">
-          <h2 className="section-heading">Past Events Highlights</h2>
+          <h2 className="section-heading">Student Life & Activities</h2>
+
           <p className="section-intro mb-4">
-            Take a look at some memorable moments from our recent events
+            At The Learning World School, learning goes beyond classrooms. Students are encouraged
+            to participate in a wide range of academic, cultural, and sports activities throughout
+            the year.
           </p>
 
           <div className="grid-2">
             <div className="card">
               <h4 className="mb-2" style={{ color: 'var(--primary-blue)' }}>
-                🏆 Inter-School Competition
+                � Academic & Club Activities
               </h4>
-              <p className="text-sm-secondary" style={{ marginBottom: '0.5rem' }}>
-                December 2024
-              </p>
               <p>
-                Our students won multiple awards in the inter-school science and mathematics
-                competition, showcasing their exceptional talent and dedication.
+                Science exhibitions, debates, quizzes, reading programs, and subject-based clubs to
+                encourage curiosity and confidence.
               </p>
             </div>
 
             <div className="card">
               <h4 className="mb-2" style={{ color: 'var(--primary-blue)' }}>
-                🎨 Art Exhibition
+                🎨 Cultural, Sports & Creative Events
               </h4>
-              <p className="text-sm-secondary" style={{ marginBottom: '0.5rem' }}>
-                November 2024
-              </p>
               <p>
-                A beautiful display of creativity and artistic expression by our talented students,
-                featuring paintings, sculptures, and digital art.
+                Annual celebrations, sports meets, art exhibitions, music, dance, and theatre
+                activities for holistic development.
               </p>
             </div>
           </div>

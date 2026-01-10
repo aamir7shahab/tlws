@@ -9,10 +9,36 @@
   padding: 1.25rem;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s;
+  animation: bounce-attention 4s ease-in-out infinite;
 }
 
 .announcement-highlight:hover {
   box-shadow: var(--shadow-md);
+  animation-play-state: paused;
+}
+
+@keyframes bounce-attention {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+  }
+  5% {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.2);
+  }
+  10% {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+  }
+  15% {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.15);
+  }
+  20% {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+  }
 }
 
 .announcement-badge {
