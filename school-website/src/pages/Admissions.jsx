@@ -8,7 +8,7 @@ export default function Admissions() {
         <div className="section-container">
           <div className="admissions-hero">
             <h1>Admissions Open 2026–27</h1>
-            <div className="hero-subtitle">Nursery to Grade XII · CBSE Curriculum</div>
+            <div className="hero-subtitle">Nursery to Class 12 · CBSE Curriculum</div>
             <p className="hero-description">
               The Learning World School is a new-age CBSE institution built on strong academic
               foundations, values-based education, and holistic student development.
@@ -36,7 +36,7 @@ export default function Admissions() {
               to guide you through the next steps.
             </p>
             <a
-              href="https://forms.gle/YOUR_GOOGLE_FORM"
+              href="https://forms.gle/GUZpBMw9XC5UWDox9"
               target="_blank"
               rel="noopener noreferrer"
               className="apply-button-large"
