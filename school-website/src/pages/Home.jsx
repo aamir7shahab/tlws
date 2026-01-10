@@ -59,12 +59,33 @@ export default function Home() {
             </p>
           </div>
 
+          {/* HIGHLIGHTED ADMISSION NOTICE */}
+          <div className="announcement-highlight">
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                marginBottom: '0.5rem',
+              }}
+            >
+              <span className="announcement-badge">NEW</span>
+              <a
+                href="https://forms.gle/GUZpBMw9XC5UWDox9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="announcement-link"
+              >
+                Admission Open for 2026-27 – Apply Now
+              </a>
+            </div>
+            <p className="text-sm-secondary">
+              Enroll your child for the upcoming academic session. Limited seats available!
+            </p>
+          </div>
+
           {/* OTHER ANNOUNCEMENTS */}
-          <ul className="announcements-list">
-            <li className="announcement-item">
-              <span className="announcement-dot"></span>
-              Admissions open for the 2026–27 academic session
-            </li>
+          {/* <ul className="announcements-list">
             <li className="announcement-item">
               <span className="announcement-dot"></span>
               Annual Day scheduled for April 15, 2025
@@ -73,26 +94,47 @@ export default function Home() {
               <span className="announcement-dot"></span>
               Science Fair registrations now open
             </li>
-          </ul>
+          </ul> */}
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* EDUCATIONAL PROMISE */}
       <section className="section-soft">
         <div className="section-container">
-          <h2 className="section-heading">What Our Students Say</h2>
+          <h2 className="section-heading">Our Educational Promise</h2>
 
           <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <blockquote className="testimonial">
-              "The Learning World School is more than just a school — it's a family. The teachers
-              really care!"
-              <div className="testimonial-author">— Aditi, Grade 8</div>
-            </blockquote>
+            <p className="section-intro" style={{ marginBottom: '2rem' }}>
+              At The Learning World School, our commitment is to create a safe, inclusive, and
+              inspiring learning environment where every child is encouraged to explore, question,
+              and grow.
+            </p>
 
-            <blockquote className="testimonial">
-              "Every day brings something new at TLWS. I love the library and science lab!"
-              <div className="testimonial-author">— Rohan, Grade 6</div>
-            </blockquote>
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ fontWeight: '600', marginBottom: '1rem' }}>We promise:</p>
+              <ul className="announcements-list" style={{ maxWidth: '700px', margin: '0 auto' }}>
+                <li className="announcement-item" style={{ justifyContent: 'center' }}>
+                  <span className="announcement-dot"></span>
+                  Strong academic foundations aligned with the CBSE curriculum
+                </li>
+                <li className="announcement-item" style={{ justifyContent: 'center' }}>
+                  <span className="announcement-dot"></span>
+                  Experienced and caring educators
+                </li>
+                <li className="announcement-item" style={{ justifyContent: 'center' }}>
+                  <span className="announcement-dot"></span>
+                  Focus on values, discipline, and life skills
+                </li>
+                <li className="announcement-item" style={{ justifyContent: 'center' }}>
+                  <span className="announcement-dot"></span>A balanced approach to academics,
+                  sports, and creative arts
+                </li>
+                <li className="announcement-item" style={{ justifyContent: 'center' }}>
+                  <span className="announcement-dot"></span>
+                  Continuous communication and partnership with parents
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -124,13 +166,28 @@ export default function Home() {
       <section className="section-soft">
         <div className="section-container">
           <h2 className="section-heading">Our Location</h2>
-          <p className="section-intro mb-4">Visit us to experience our campus and meet our team</p>
 
-          <iframe
-            title="School Location"
-            className="location-map"
-            src="https://maps.google.com/maps?q=Googleplex&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          />
+          <p className="section-intro mb-4">Visit us to experience our campus and meet our team.</p>
+
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3565.8339979968514!2d84.04778707744539!3d26.6538056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDM5JzEzLjciTiA4NMKwMDMnMDEuMyJF!5e0!3m2!1sen!2sin!4v1768038531000!5m2!1sen!2sin"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="The Learning World School Location"
+            ></iframe>
+
+            {/* GET DIRECTIONS OVERLAY */}
+            <a
+              href="https://www.google.com/maps/dir/28.4966379,77.4407082/26.6538056,84.0503611/@26.6391121,84.0512414,15.67z/data=!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="map-direction-btn"
+            >
+              Get Directions
+            </a>
+          </div>
         </div>
       </section>
     </div>
