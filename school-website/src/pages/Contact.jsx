@@ -1,5 +1,6 @@
 import '../styles/about.css';
 import '../styles/contact.css';
+import '../styles/home.css';
 
 export default function Contact() {
   return (
@@ -22,15 +23,16 @@ export default function Contact() {
             <div className="contact-info-card">
               <div className="contact-icon">📞</div>
               <h3 className="contact-info-title">Phone</h3>
-              <p className="contact-info-text">+91 XXXXX XXXXX</p>
+              <p className="contact-info-text">+91 9838760126</p>
+              <p className="contact-info-text">+91 7007428195</p>
               <p className="contact-info-text">Mon-Sat, 9 AM - 5 PM</p>
             </div>
 
             <div className="contact-info-card">
               <div className="contact-icon">✉️</div>
               <h3 className="contact-info-title">Email</h3>
-              <p className="contact-info-text">info@tlws.edu</p>
-              <p className="contact-info-text">admissions@tlws.edu</p>
+              <p className="contact-info-text">contacttlws1@gmail.com</p>
+              <p className="contact-info-text">https://www.tlws.co.in (Website)</p>
             </div>
 
             <div className="contact-info-card">
@@ -39,52 +41,12 @@ export default function Contact() {
               <p className="contact-info-text">
                 The Learning World School
                 <br />
-                [Address Line 1]
+                Captain mor, Koilasawa Fazilnagar Road,
                 <br />
-                [City, State - PIN]
+                Katiya, Fazilnagar, Uttar Pradesh - 274401
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CONTACT FORM */}
-      <section className="section-soft">
-        <div className="section-container" style={{ display: 'flex', justifyContent: 'center' }}>
-          <form className="contact-form">
-            <h2
-              style={{ color: 'var(--primary-blue)', marginBottom: '1.5rem', textAlign: 'center' }}
-            >
-              Send Us a Message
-            </h2>
-
-            <div className="form-group">
-              <label className="form-label">Your Name</label>
-              <input type="text" className="form-input" placeholder="Enter your name" />
-            </div>
-
-            <div className="form-group">
-              <label className="form-label">Your Email</label>
-              <input type="email" className="form-input" placeholder="Enter your email" />
-            </div>
-
-            <div className="form-group">
-              <label className="form-label">Phone Number</label>
-              <input type="tel" className="form-input" placeholder="Enter your phone number" />
-            </div>
-
-            <div className="form-group">
-              <label className="form-label">Your Message</label>
-              <textarea
-                className="form-textarea"
-                placeholder="Write your message here..."
-              ></textarea>
-            </div>
-
-            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-              Submit Message
-            </button>
-          </form>
         </div>
       </section>
 
@@ -96,12 +58,25 @@ export default function Contact() {
             Schedule a visit to experience our facilities and meet our team
           </p>
 
-          <iframe
-            title="School Location"
-            className="location-map"
-            src="https://maps.google.com/maps?q=Googleplex&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            style={{ width: '100%', height: '400px', borderRadius: '16px', border: 'none' }}
-          />
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3565.8339979968514!2d84.04778707744539!3d26.6538056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDM5JzEzLjciTiA4NMKwMDMnMDEuMyJF!5e0!3m2!1sen!2sin!4v1768038531000!5m2!1sen!2sin"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="The Learning World School Location"
+            ></iframe>
+
+            {/* GET DIRECTIONS OVERLAY */}
+            <a
+              href="https://www.google.com/maps/dir/28.4966379,77.4407082/26.6538056,84.0503611/@26.6391121,84.0512414,15.67z/data=!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="map-direction-btn"
+            >
+              Get Directions
+            </a>
+          </div>
         </div>
       </section>
     </div>
