@@ -3,7 +3,7 @@ import AppRoutes from './routes/AppRoutes';
 
 function Footer() {
   return (
-    <footer className="bg-blue-600 text-white text-center py-4 mt-10">
+    <footer className="bg-blue-600 text-white text-center py-4 mt-6">
       <p className="text-sm">
         &copy; {new Date().getFullYear()} The Learning World School. All rights reserved.
       </p>
