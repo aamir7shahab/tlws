@@ -1,5 +1,34 @@
 /* HOME PAGE STYLES */
 
+/* Website Update Notice */
+.website-notice {
+  background: linear-gradient(to right, #fef9f3, #fefce8, #fef9f3);
+  border-left: 3px solid #f59e0b;
+  border-radius: 12px;
+  padding: 0.875rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.website-notice p {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+.website-notice a {
+  color: var(--primary-blue);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.website-notice a:hover {
+  color: var(--primary-blue-dark);
+}
+
 /* Announcement Card */
 .announcement-highlight {
   margin-bottom: 1.5rem;

@@ -1,5 +1,7 @@
 import '../styles/about.css';
 import '../styles/home.css';
+import classroom2 from '../assets/classroom2.png';
+import campus1 from '../assets/campus1.png';
 
 export default function Home() {
   return (
@@ -28,6 +30,14 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* WEBSITE UPDATE NOTICE */}
+      <div className="website-notice">
+        <p>
+          This website is being updated as part of our school launch. For the most accurate and
+          latest information, please <a href="/contact">contact</a> our admissions team.
+        </p>
+      </div>
 
       {/* LATEST ANNOUNCEMENTS */}
       <section className="section">
@@ -148,16 +158,8 @@ export default function Home() {
           </p>
 
           <div className="grid-2">
-            <img
-              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b"
-              className="img-rounded"
-              alt="School building"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1"
-              className="img-rounded"
-              alt="Students"
-            />
+            <img src={campus1} className="img-rounded" alt="School building" />
+            <img src={classroom2} className="img-rounded" alt="Students" />
           </div>
         </div>
       </section>

@@ -107,7 +107,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* SCHOOL HIGHLIGHTS */}
+      {/* SCHOOL HIGHLIGHTS
       <section className="section">
         <div className="section-container">
           <h2 className="section-heading">Why Choose Us</h2>
@@ -140,7 +140,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* INFRASTRUCTURE */}
       <section className="section-soft">

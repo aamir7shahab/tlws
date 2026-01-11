@@ -325,17 +325,17 @@ li {
   background: var(--bg-gradient-blue);
   border-radius: 20px;
   box-shadow: var(--shadow-blue);
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .cta-section h2 {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 .cta-section p {
-  color: #ffffff;
+  color: #ffffff !important;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -345,7 +345,7 @@ li {
   border-radius: 16px;
   box-shadow: var(--shadow-md);
   width: 100%;
-  height: auto;
+  height: 400px;
   object-fit: cover;
 }
 
