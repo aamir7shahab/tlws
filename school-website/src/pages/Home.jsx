@@ -1,7 +1,16 @@
+import { useRef, useEffect, useState } from 'react';
 import '../styles/about.css';
 import '../styles/home.css';
-import classroom2 from '../assets/classroom2.png';
-import campus1 from '../assets/campus1.png';
+
+import SchoolFront from '../assets/SchoolFront.JPG';
+import EntrySchool from '../assets/EntrySchool.JPG';
+import InnerSchool from '../assets/InnerSchool.JPG';
+import Board from '../assets/Board.JPG';
+import OpeningCeremony from '../assets/OpeningCeremony.JPG';
+import CandleLighting from '../assets/CandleLighting.JPG';
+import Garland from '../assets/Garland.JPG';
+import DCMSpeech from '../assets/DCMSpeech.JPG';
+import Speech from '../assets/Speech.JPG';
 
 export default function Home() {
   return (
@@ -149,20 +158,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CAMPUS */}
-      <section className="section">
-        <div className="section-container">
-          <h2 className="section-heading">A Glimpse of Our Campus</h2>
-          <p className="section-intro mb-4">
-            Explore our modern facilities and vibrant learning environment
-          </p>
-
-          <div className="grid-2">
-            <img src={campus1} className="img-rounded" alt="School building" />
-            <img src={classroom2} className="img-rounded" alt="Students" />
-          </div>
-        </div>
-      </section>
+      {/* CAMPUS GALLERY */}
+      <CampusGallery />
 
       {/* LOCATION */}
       <section className="section-soft">
@@ -193,5 +190,101 @@ export default function Home() {
         </div>
       </section>
     </div>
+  );
+}
+
+const campusImages = [
+  { src: SchoolFront,      alt: 'School Front',       caption: 'School Front' },
+  { src: EntrySchool,      alt: 'School Entry',        caption: 'School Entry' },
+  { src: InnerSchool,      alt: 'Inside the School',   caption: 'Inside the Campus' },
+  { src: Board,            alt: 'School Board',        caption: 'School Board' },
+  { src: OpeningCeremony,  alt: 'Opening Ceremony',    caption: 'Opening Ceremony' },
+  { src: CandleLighting,   alt: 'Candle Lighting',     caption: 'Candle Lighting' },
+  { src: Garland,          alt: 'Garland Ceremony',    caption: 'Garland Ceremony' },
+  { src: DCMSpeech,        alt: 'DCM Speech',          caption: 'Chief Guest Speech' },
+  { src: Speech,           alt: 'Speech',              caption: 'Inaugural Address' },
+];
+
+// Duplicate images for seamless infinite loop
+const loopedImages = [...campusImages, ...campusImages];
+
+function CampusGallery() {
+  const trackRef = useRef(null);
+  const isPaused = useRef(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Auto-scroll: moves by 1px every ~16ms (≈ 60fps), smooth constant motion
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+
+    let animId;
+    const speed = 0.7; // px per frame — adjust for faster/slower
+
+    const step = () => {
+      if (!isPaused.current && track) {
+        track.scrollLeft += speed;
+        // When scrolled halfway (one full set of images), jump back to start silently
+        const halfWidth = track.scrollWidth / 2;
+        if (track.scrollLeft >= halfWidth) {
+          track.scrollLeft -= halfWidth;
+        }
+      }
+      animId = requestAnimationFrame(step);
+    };
+
+    animId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animId);
+  }, []);
+
+  const scroll = (dir) => {
+    if (!trackRef.current) return;
+    const cardWidth = trackRef.current.querySelector('.gallery-card')?.offsetWidth || 340;
+    trackRef.current.scrollBy({ left: dir * (cardWidth + 24), behavior: 'smooth' });
+  };
+
+  return (
+    <section className="section">
+      <div className="section-container-wide">
+        <h2 className="section-heading">A Glimpse of Our Campus</h2>
+        <p className="section-intro mb-4">
+          Explore our modern facilities and vibrant learning environment
+        </p>
+
+        <div
+          className="gallery-wrapper"
+          onMouseEnter={() => { isPaused.current = true;  setIsHovered(true);  }}
+          onMouseLeave={() => { isPaused.current = false; setIsHovered(false); }}
+        >
+          {/* LEFT ARROW */}
+          <button
+            className={`gallery-arrow gallery-arrow-left${isHovered ? ' gallery-arrow-visible' : ''}`}
+            onClick={() => scroll(-1)}
+            aria-label="Scroll left"
+          >
+            &#8592;
+          </button>
+
+          {/* SCROLLABLE TRACK — looped images for seamless wrap */}
+          <div className="gallery-track" ref={trackRef}>
+            {loopedImages.map((img, i) => (
+              <div className="gallery-card" key={i}>
+                <img src={img.src} alt={img.alt} className="gallery-img" />
+                <div className="gallery-caption">{img.caption}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* RIGHT ARROW */}
+          <button
+            className={`gallery-arrow gallery-arrow-right${isHovered ? ' gallery-arrow-visible' : ''}`}
+            onClick={() => scroll(1)}
+            aria-label="Scroll right"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
   );
 }
