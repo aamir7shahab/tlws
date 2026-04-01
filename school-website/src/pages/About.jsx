@@ -1,4 +1,6 @@
 import '../styles/about.css';
+import SchoolFront from '../assets/SchoolFront.JPG';
+import classroom1 from '../assets/classroom1.png';
 
 export default function About() {
   return (
@@ -210,8 +212,8 @@ export default function About() {
           <p className="section-intro mb-4">A glimpse of our vibrant learning environment</p>
 
           <div className="grid-2">
-            <img src="/campus1.jpg" alt="School Campus Building" className="img-rounded" />
-            <img src="/classroom1.jpg" alt="Modern Classroom" className="img-rounded" />
+            <img src={SchoolFront} alt="School Campus Building" className="img-rounded" />
+            <img src={classroom1} alt="Modern Classroom" className="img-rounded" />
           </div>
         </div>
       </section>
